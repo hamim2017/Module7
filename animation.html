@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes faltu-animation{
+            0%{
+                top: 0;
+                left: 0;
+                background-color: red;
+            }
+            50%{
+                left: 200px;
+                top: 100px;
+            }
+            100%{
+                top: 0;
+                left: 400px;
+                background-color: teal;
+            }
+        }
+        .stage{
+            height: 200px;
+            width: 500px;
+            background-color: silver;
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: purple;
+            position: relative;
+        }
+        .stage:hover .ball{
+            animation: faltu-animation 3s ease-in-out 0s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+    <a href="https://codepen.io/">Learn More</a>
+</body>
+</html>
